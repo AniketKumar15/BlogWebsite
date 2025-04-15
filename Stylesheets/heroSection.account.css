@@ -1,0 +1,87 @@
+/* ------------------------------------Hero Section------------------------------------------ */
+/* Hero Section - Full Width & Height */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 80px); /* Adjust based on your navbar height */
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+/* Left Side - Text Content */
+.hero-content {
+  max-width: 50%;
+}
+
+.hero h1 {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.hero h1 span {
+  color: black;
+}
+
+.hero .green-text {
+  color: green;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.readBtn {
+  margin-top: 30px;
+}
+.readBtn a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  background: #1b1b1b;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+/* Hero Image Styling */
+.heroImg {
+  max-width: 50%; /* Limit size to half of the hero section on larger screens */
+  height: calc(100vh - 80px); /* Full screen height minus navbar height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImg img {
+  width: 100%; /* Make the image responsive within its container */
+  height: 100%; /* Ensure it covers the full height */
+  object-fit: cover; /* Cover the container without distortion */
+}
+/* Responsive for Tablets */
+@media (max-width: 1024px) {
+  .hero {
+    text-align: left;
+    height: calc(100vh - 120px); /* Allow height to adjust */
+    padding: 30px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+  .heroImg {
+    max-width: 80%; /* Increase size for better visibility on tablets */
+    height: auto; /* Allow height to adjust naturally */
+    margin-top: 20px;
+  }
+  .heroImg {
+    display: none;
+  }
+}
+/* Responsive for Mobile */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 90px;
+  }
+}
